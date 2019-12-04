@@ -55,6 +55,7 @@ body {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  font-family: "Source Sans Pro";
 
   > .content {
     flex-grow: 1;
@@ -110,7 +111,7 @@ body {
 
   // Bigger title
   .site-title {
-    font-size: 3.25rem;
+    font-size: 3.00rem;
   }
 
   // Show secondary nav content + lead
@@ -131,6 +132,16 @@ body {
   }
 }
 
+// Center and scale down Avatar on home page
+.home #headshot {
+  display: inline;
+  max-width: 50%;
+}
+
+// Duck-tape fix
+.post #headshot {
+  display: none;
+}
 
 /* -----------------------------------------------------------
   Tablet / Desktop view
@@ -152,17 +163,23 @@ body {
   /* Undo mobile CSS */
 
   #sidebar, .home #sidebar {
+    text-align: center;
     width: $sidebar-width;
-    text-align: left;
 
     > *:last-child {
       margin-bottom: 0;
+    }
+
+    // Avatar Full-Size
+    #headshot {
+      display: inline;
+      max-width: 100%;
     }
   }
 
   #sidebar {
     .site-title {
-      font-size: 3.25rem;
+      font-size: 3.00rem;
       .back-arrow { display: none; }
     }
 
@@ -173,6 +190,7 @@ body {
     header ~ nav {
       display: flex;
     }
+
   }
 
   .index #sidebar { margin-bottom: 0; }
@@ -242,18 +260,18 @@ body {
 }
 
 #sidebar-nav-links {
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
 }
 
 #sidebar-icon-links {
   max-width: 100%;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
   margin-top: 1rem;
 
   @media (min-width: $large-breakpoint) {
     margin-left: -0.25em;
-    justify-content: flex-start;
   }
 }
 
