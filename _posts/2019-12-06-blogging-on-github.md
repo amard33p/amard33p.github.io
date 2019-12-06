@@ -22,7 +22,7 @@ My reasons for choosing this over established blogging platforms (Wordpress, Med
 I went for [Hydeout](https://fongandrew.github.io/hydeout/) as I am not really good at Javascript and I really liked Jekyll's Hyde theme and this is the up-to-date version with some added features.
 * Fork the theme repo to your Github account and change the repo name under settings to - \<github_username\>.github.io. This will be your blog's URL.
 * Now we can clone the repo locally and customise its looks as we desire.
-* Add posts under the `_posts` directory in [Markdown](https://guides.github.com/features/mastering-markdown/) format. [Guide to write posts](https://jekyllrb.com/docs/posts/).
+* Add posts under the `_posts` directory in [Markdown](https://guides.github.com/features/mastering-markdown/) format. [Guide to writing posts](https://jekyllrb.com/docs/posts/).
 * Edit `_config.yml` to add your data.
 * Commit and push your changes.
 * Now Github will start building the site. You can check the status under Settings > GitHub Pages.
