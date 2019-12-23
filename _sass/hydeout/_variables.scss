@@ -1,6 +1,6 @@
-$gray-1: #f9f9f9 !default;
+$gray-1: #e8eaed !default;
 $gray-2: #e5e5e5 !default;
-$gray-3: #ccc !default;
+$gray-3: #9da5b4 !default;
 $gray-4: #767676 !default;
 $gray-5: #515151 !default;
 $gray-6: #313131 !default;
@@ -17,11 +17,11 @@ $root-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxy
 $root-font-size: 1rem !default;
 $root-line-height: 1.5 !default;
 
-$body-color: $gray-5 !default;
-$body-muted: $gray-4 !default;
-$body-bg: #fff !default;
+$body-color: $gray-1 !default;
+$body-muted: $gray-2 !default;
+$body-bg: #28292c !default;
 $link-color: $blue !default;
-$heading-color: $gray-6 !default;
+$heading-color: $gray-1 !default;
 
 $border-color: $gray-2 !default;
 $border-radius: 300px !default;
@@ -45,8 +45,8 @@ $code-font-family: Menlo, Monaco, "Courier New", monospace !default;
 $code-color: #bf616a !default;
 
 // Hyde theming
-$sidebar-bg-color: #202020 !default;
-$sidebar-fg-color: white !default;
+$sidebar-bg-color: #202124 !default;
+$sidebar-fg-color: whitesmoke !default;
 $sidebar-sticky: true !default;
 $layout-reverse: false !default;
 
