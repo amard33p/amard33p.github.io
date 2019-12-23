@@ -26,7 +26,7 @@ We will learn to create a Celery task queue consisting of a chain of long-runnin
 
     **Considerations:**
 
-    * Why not use RPC as backend instead of installing an additonal component - Redis?
+    * Why not use RPC as backend instead of installing an additional component - Redis?
     * Due to [this issue](https://github.com/celery/celery/issues/4084) I found RPC to incorrectly report task status.
     * Why not use Redis as both broker and backend?
     * From [the docs](https://docs.celeryproject.org/en/latest/faq.html#do-i-have-to-use-amqp-rabbitmq),  
@@ -158,7 +158,7 @@ Now what if we wanted our tasks to be neatly organized in subdirectories? For e.
     └── __init__.py
 ```
 
-Instead of modifying celery.py everytime we add a new task, we can write a simple function which looks for task scripts under tasks directory and automatically imports them.
+Instead of modifying celery.py every time we add a new task, we can write a simple function which looks for task scripts under tasks directory and automatically imports them.
 
 ```python
 def taskDetector(task_root):
@@ -180,7 +180,7 @@ app = Celery(APP_NAME,
 
 ### Day-4: Designing workflows
 
-To run multiple tasks serially/parallely we need to run the task using the task's signature method.
+To run multiple tasks serially/in-parallel we need to run the task using the task's signature method.
 
 E.g: To calculate (4 / 2 * 3 + 6 - 2)  
 `Workflow1 = (div.s(4, 2) | mul.s(3) | add.s(6) | sub.s(2)).apply_async()`  
@@ -238,7 +238,7 @@ I have also named the tasks to identify the tasks easily in the logs. This can a
 
 * Let's consider the same workflow from Day-4:  
   `Workflow1 = (div.s(4, 2) | mul.s(3) | add.s(6) | sub.s(2))()` 
-* Now `Workflow1` has started. Sicne the workflow contains long running tasks, we need to be able to query the status of each task.
+* Now `Workflow1` has started. Since the workflow contains long running tasks, we need to be able to query the status of each task.
 * For this first we need the task_ids of each task in `Workflow1`.  
   `Workflow1` will reference the last task in the chain (sub). We need to traverse up the chain using a generator to access all tasks in the  workflow.  
 

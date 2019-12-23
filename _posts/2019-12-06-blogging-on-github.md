@@ -19,7 +19,12 @@ My reasons for choosing this over established blogging platforms (Wordpress, Med
 ## Getting started
 * Decide on a static site generator. Reference: <https://www.staticgen.com/>  
 * Choose a theme. Examples -  [Jekyll](https://jekyllthemes.io/free), [Hugo](https://themes.gohugo.io/), [Pelican](http://www.pelicanthemes.com/)  
-I went for [Hydeout](https://fongandrew.github.io/hydeout/) as I am not really good at Javascript and I really liked Jekyll's Hyde theme and this is the up-to-date version with some added features.
+* I chose [Hydeout](https://fongandrew.github.io/hydeout/) as:
+  * I am not really good at Javascript so that leaves out JS based SSGs.
+  * I wanted a simple website that is [designed to last](https://jeffhuang.com/designed_to_last/).
+  * I really liked Jekyll's [Hyde](https://hyde.getpoole.com/) theme.
+  * Hydeout is the still maintained fork of Hyde with some added features.
+  * A more feature packed theme is [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
 * Fork the theme repo to your Github account and change the repo name under settings to - \<github_username\>.github.io. This will be your blog's URL.
 * Now we can clone the repo locally and customise its looks as we desire.
 * Add posts under the `_posts` directory in [Markdown](https://guides.github.com/features/mastering-markdown/) format. [Guide to writing posts](https://jekyllrb.com/docs/posts/).
@@ -38,6 +43,6 @@ While I was customising the looks of the website I felt a need of local hosting 
 For this I found [docker-github-pages](https://github.com/Starefossen/docker-github-pages) to be excellent. The only issue is that you need to delete the Gemfile inside the repo to run the container. Note that without a Gemfile bundle exec will not work.  
 
 * Run powershell.
-* cd to repository and delete the Gemfile.
-* `docker run -it --rm -v ${PWD}:/usr/src/app -p "4000:4000" starefossen/github-pages`
-* Browse to 127.0.0.1:4000 to see your site.
+* cd inside the repository.
+* Run `docker run -it --rm -v ${PWD}:/usr/src/app -p "4000:4000" starefossen/github-pages`
+* Site is live at 127.0.0.1:4000.
