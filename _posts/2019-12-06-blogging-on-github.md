@@ -24,7 +24,6 @@ My reasons for choosing this over established blogging platforms (Wordpress, Med
   * I wanted a simple website that is [designed to last](https://jeffhuang.com/designed_to_last/).
   * I really liked Jekyll's [Hyde](https://hyde.getpoole.com/) theme.
   * Hydeout is the still maintained fork of Hyde with some added features.
-  * A more feature packed theme is [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
 * Fork the theme repo to your Github account and change the repo name under settings to - \<github_username\>.github.io. This will be your blog's URL.
 * Now we can clone the repo locally and customise its looks as we desire.
 * Add posts under the `_posts` directory in [Markdown](https://guides.github.com/features/mastering-markdown/) format. [Guide to writing posts](https://jekyllrb.com/docs/posts/).
