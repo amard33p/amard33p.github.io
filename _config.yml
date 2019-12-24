@@ -37,6 +37,9 @@ sidebar_nav_link:  false
 
 
 # Social Links
-self_github:	'https://github.com/amard33p'
-self_linkedin:	'https://www.linkedin.com/in/amardeep-kahali/'
-self_email: 'mailto:amardeep.kahali@gmail.com'
+self_github:    'https://github.com/amard33p'
+self_linkedin:  'https://www.linkedin.com/in/amardeep-kahali/'
+self_email:     'mailto:amardeep.kahali@gmail.com'
+
+disqus:
+  shortname: amard33p
