@@ -1,5 +1,5 @@
 ---
-title: "Blogging on Github"
+title: "Blogging on GitHub Pages"
 layout: post
 excerpt: "How to start a blog on GitHub Pages. "
 tags:
