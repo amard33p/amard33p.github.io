@@ -11,7 +11,6 @@
     </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
     <p class="lead">{{ site.description }}</p>
   </header>
-  {% include sidebar-icon-links.html %}
 
   {% if site.version %}
     <span class="site-version">Currently v{{ site.version }}</span>
@@ -20,4 +19,6 @@
   {% if site.sidebar_nav_link %}
     {% include sidebar-nav-links.html %}
   {% endif %}
+
+  {% include sidebar-icon-links.html %}
 </div>

@@ -131,15 +131,13 @@ body {
   }
 }
 
-// Center and scale down Avatar on home page
+// Show smaller Avatar only on home page
+#headshot {
+  display: none;
+}
 .home #headshot {
   display: inline;
   max-width: 50%;
-}
-
-// Duck-tape fix
-.post #headshot {
-  display: none;
 }
 
 /* -----------------------------------------------------------
@@ -162,7 +160,7 @@ body {
   /* Undo mobile CSS */
 
   #sidebar, .home #sidebar {
-    text-align: center;
+    text-align: left;
     width: $sidebar-width;
 
     > *:last-child {
@@ -171,7 +169,9 @@ body {
 
     // Avatar Full-Size
     #headshot {
-      display: inline;
+      display: block;
+      margin: auto;
+      padding-bottom: 1em;
       max-width: 100%;
     }
   }
@@ -259,18 +259,18 @@ body {
 }
 
 #sidebar-nav-links {
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
+  flex-flow: column nowrap;
 }
 
 #sidebar-icon-links {
   max-width: 100%;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  justify-content: space-around;
   margin-top: 1rem;
 
   @media (min-width: $large-breakpoint) {
     margin-left: -0.25em;
+    justify-content: space-between;
   }
 }
 

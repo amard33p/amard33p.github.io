@@ -1,4 +1,16 @@
 <!-- Optional additional links to insert for icons links -->
-<a href="{{ site.self_email }}"><i class="icon fas fa-envelope"></i></a>
-<a href="{{ site.self_github }}"><i class="icon fab fa-github"></i></a>
-<a href="{{ site.self_linkedin }}"><i class="icon fab fa-linkedin-in"></i></a>
+<a id="email-link"
+   class="icon" title="eMail" aria-label="eMail"
+   href="{{ site.self_email }}">
+  {% include svg/envelope-regular.svg %}
+</a>
+<a id="github-link"
+   class="icon" title="Github" aria-label="Github"
+   href="{{ site.self_github }}">
+  {% include svg/github-brands.svg %}
+</a>
+<a id="linkedin-link"
+   class="icon" title="LinkedIn" aria-label="LinkedIn"
+   href="{{ site.self_linkedin }}">
+  {% include svg/linkedin-in-brands.svg %}
+</a>
