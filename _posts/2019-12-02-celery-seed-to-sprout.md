@@ -26,10 +26,10 @@ We will learn to create a Celery task queue consisting of a chain of long-runnin
 
     **Considerations:**
 
-    * Why not use RPC as backend instead of installing an additional component - Redis?
-    * Due to [this issue](https://github.com/celery/celery/issues/4084) I found RPC to incorrectly report task status.
-    * Why not use Redis as both broker and backend?
-    * From [the docs](https://docs.celeryproject.org/en/latest/faq.html#do-i-have-to-use-amqp-rabbitmq),  
+    * Why not use RPC as backend instead of installing an additional component - Redis?  
+        Due to [this issue](https://github.com/celery/celery/issues/4084) I found RPC to incorrectly report task status.
+    * Why not use Redis as both broker and backend?  
+        From [the docs](https://docs.celeryproject.org/en/latest/faq.html#do-i-have-to-use-amqp-rabbitmq),  
         > Redis as a broker won’t perform as well as an AMQP broker, but the combination RabbitMQ as broker and Redis as a result store is commonly used. If you have strict reliability requirements you’re encouraged to use RabbitMQ or another AMQP broker.
 
 ## Index
