@@ -13,7 +13,7 @@ I am about to add new feature or resolve some bugs. So I create a branch.
 
 I make the necessary code changes and commit. I then ensure that this local branch is at par with master.  
 `git fetch origin`  
-`git pull origin master --rebase`
+`git pull --rebase origin master`
 
 ```
  * branch            master     -> FETCH_HEAD
