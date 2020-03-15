@@ -61,5 +61,5 @@ I have a couple of ways to get out of this mess.
 
 
 _References:_  
-- <https://shitalshah.com/p/git-workflow-branch-rebase-squash-merge/>  
-- <https://www.atlassian.com/git/tutorials/merging-vs-rebasing/>
+- <https://shitalshah.com/p/git-workflow-branch-rebase-squash-merge>  
+- <https://www.atlassian.com/git/tutorials/merging-vs-rebasing>

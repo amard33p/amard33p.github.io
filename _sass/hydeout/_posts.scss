@@ -57,6 +57,11 @@ h2.post-title, h2.page-title {
   }
 }
 
+// Wrap long-links in posts
+.post-body a {
+  word-wrap: break-word;
+}
+
 .posts-by-tag h2 {
   text-transform: capitalize;
 }

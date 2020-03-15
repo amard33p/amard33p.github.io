@@ -196,4 +196,4 @@ Click 'Resolve' beside Provisioning templates and you should see the ESXi iPXE a
 
 _References:_  
 - <https://community.theforeman.org/t/discovery-ipxe-efi-workflow-in-foreman-1-20/13026>  
-- <https://projects.theforeman.org/projects/foreman/wiki/Fetch_boot_files_via_http_instead_of_TFTP/>
+- <https://projects.theforeman.org/projects/foreman/wiki/Fetch_boot_files_via_http_instead_of_TFTP>
