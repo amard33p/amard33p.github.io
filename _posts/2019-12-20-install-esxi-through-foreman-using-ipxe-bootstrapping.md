@@ -195,5 +195,5 @@ Click 'Resolve' beside Provisioning templates and you should see the ESXi iPXE a
 **3.7:** Click 'Build' and reboot the host to PXE. You should see iPXE boot up and fetch the iPXE script from DHCP. On getting this request, Foreman sees the host is in build mode and provides "ESXi iPXE Common" script. The installer loads up and completes the installation automatically. Upon build complete when the host reboots, Foreman will automatically provide a localboot iPXE script. Pretty cool!
 
 _References:_  
-<https://community.theforeman.org/t/discovery-ipxe-efi-workflow-in-foreman-1-20/13026>  
-<https://projects.theforeman.org/projects/foreman/wiki/Fetch_boot_files_via_http_instead_of_TFTP/>
+- <https://community.theforeman.org/t/discovery-ipxe-efi-workflow-in-foreman-1-20/13026>  
+- <https://projects.theforeman.org/projects/foreman/wiki/Fetch_boot_files_via_http_instead_of_TFTP/>

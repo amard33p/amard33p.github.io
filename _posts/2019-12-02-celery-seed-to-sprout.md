@@ -401,25 +401,25 @@ def get(self, request, format=None):
 ---
 
 _References:_  
-<https://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html>  
-<https://docs.celeryproject.org/en/latest/userguide/tasks.html>  
-<https://docs.celeryproject.org/en/latest/userguide/canvas.html>  
-<https://stackoverflow.com/questions/26058156/celery-get-list-of-registered-tasks>  
-<https://stackoverflow.com/questions/7149074/deleting-all-pending-tasks-in-celery-rabbitmq>  
-<https://stackoverflow.com/questions/17702578/how-to-structure-celery-tasks>  
-<https://stackoverflow.com/questions/22078549/celery-discover-tasks-in-files-with-other-filenames>  
-<https://stackoverflow.com/questions/41861882/parallel-and-sequential-execution-of-tasks-using-celery>  
-<https://stackoverflow.com/questions/29547695/celery-access-all-previous-results-in-a-chain>  
-<https://stackoverflow.com/questions/18872854/getting-task-id-inside-a-celery-task>  
-<https://stackoverflow.com/questions/14968265/celery-task-chain-and-accessing-kwargs>  
-<https://stackoverflow.com/questions/54899320/what-is-the-meaning-of-bind-true-keyword-in-celery>  
-<https://stackoverflow.com/questions/9731435/retry-celery-tasks-with-exponential-back-off>  
-<https://www.toptal.com/python/orchestrating-celery-python-background-jobs>  
-<https://www.distributedpython.com/2018/09/04/error-handling-retry/>  
-<https://www.distributedpython.com/2018/08/28/celery-logging/>  
-<https://pawelzny.com/python/celery/2017/08/14/celery-4-tasks-best-practices/>  
-<https://medium.com/@taylorhughes/three-quick-tips-from-two-years-with-celery-c05ff9d7f9eb>  
-<https://github.com/celery/celery/pull/5652>  
-<https://www.distributedpython.com/2018/06/12/celery-django-docker/>  
-<https://coderbook.com/@marcus/best-practices-for-setting-up-celery-with-django/>  
-<https://github.com/xlwings/python-celery-dockerize-celery-django>
+- <https://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html>  
+- <https://docs.celeryproject.org/en/latest/userguide/tasks.html>  
+- <https://docs.celeryproject.org/en/latest/userguide/canvas.html>  
+- <https://stackoverflow.com/questions/26058156/celery-get-list-of-registered-tasks>  
+- <https://stackoverflow.com/questions/7149074/deleting-all-pending-tasks-in-celery-rabbitmq>  
+- <https://stackoverflow.com/questions/17702578/how-to-structure-celery-tasks>  
+- <https://stackoverflow.com/questions/22078549/celery-discover-tasks-in-files-with-other-filenames>  
+- <https://stackoverflow.com/questions/41861882/parallel-and-sequential-execution-of-tasks-using-celery>  
+- <https://stackoverflow.com/questions/29547695/celery-access-all-previous-results-in-a-chain>  
+- <https://stackoverflow.com/questions/18872854/getting-task-id-inside-a-celery-task>  
+- <https://stackoverflow.com/questions/14968265/celery-task-chain-and-accessing-kwargs>  
+- <https://stackoverflow.com/questions/54899320/what-is-the-meaning-of-bind-true-keyword-in-celery>  
+- <https://stackoverflow.com/questions/9731435/retry-celery-tasks-with-exponential-back-off>  
+- <https://www.toptal.com/python/orchestrating-celery-python-background-jobs>  
+- <https://www.distributedpython.com/2018/09/04/error-handling-retry/>  
+- <https://www.distributedpython.com/2018/08/28/celery-logging/>  
+- <https://pawelzny.com/python/celery/2017/08/14/celery-4-tasks-best-practices/>  
+- <https://medium.com/@taylorhughes/three-quick-tips-from-two-years-with-celery-c05ff9d7f9eb>  
+- <https://github.com/celery/celery/pull/5652>  
+- <https://www.distributedpython.com/2018/06/12/celery-django-docker/>  
+- <https://coderbook.com/@marcus/best-practices-for-setting-up-celery-with-django/>  
+- <https://github.com/xlwings/python-celery-dockerize-celery-django>
