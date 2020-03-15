@@ -11,7 +11,7 @@ tags:
 ## Requirements
 
 * `pip3 install djangorestframework djangorestframework-simplejwt`
-* Clone appropriate release branch of <https://github.com/amard33p/drftests/>
+* Clone appropriate release branch of <https://github.com/amard33p/drfauth101/>
 
 
 ### Basic Authentication
@@ -19,7 +19,7 @@ tags:
 
 Usage  
 ```
-git clone -b 0.2 https://github.com/amard33p/drftests
+git clone -b 0.2 https://github.com/amard33p/drfauth101
 # Create superuser, make migrations and runserver
 curl -X GET -u root:toor http://127.0.0.1:8000/home/
 ```
@@ -35,7 +35,7 @@ curl -X GET -u root:toor http://127.0.0.1:8000/home/
 * High memory usage or DB hits.
 
 Usage  
-1. `git clone -b 0.3 https://github.com/amard33p/drftests`
+1. `git clone -b 0.3 https://github.com/amard33p/drfauth101`
 2. Login to the admin site in Chrome
 3. Under DevTools > Application > Cookies get `sessionid` cookie value
 4. `curl -X GET -b 'sessionid=<COOKIE_VALUE>' http://127.0.0.1:8000/home/`
@@ -48,7 +48,7 @@ Usage
 
 Usage  
 ```
-git clone -b 0.4 https://github.com/amard33p/drftests
+git clone -b 0.4 https://github.com/amard33p/drfauth101
 # Generate the token
 curl -X POST http://127.0.0.1:8000/api-token-auth/ -d "username=root&password=toor"
 # Pass the token as header
@@ -68,7 +68,7 @@ curl -X GET http://127.0.0.1:8000/home/ -H 'Authorization: Token 731ce64bb173d70
 
 Usage  
 ```
-git clone -b 0.5 https://github.com/amard33p/drftests
+git clone -b 0.5 https://github.com/amard33p/drfauth101
 # Generate the tokens
 curl -X POST http://127.0.0.1:8000/api/token/ -d "username=root&password=toor"
 # Pass access token as header
@@ -77,11 +77,11 @@ curl -X GET http://127.0.0.1:8000/home/ -H 'Authorization: Bearer <ACCESS_TOKEN>
 
 
 _References:_  
-<https://stackoverflow.com/questions/6068113/do-sessions-really-violate-restfulness?rq=1/>  
-<https://dev.to/thecodearcher/what-really-is-the-difference-between-session-and-token-based-authentication-2o39/>  
-<https://security.stackexchange.com/questions/81756/session-authentication-vs-token-authentication/>  
-<https://simpleisbetterthancomplex.com/tutorial/2018/11/22/how-to-implement-token-authentication-using-django-rest-framework.html/>  
-<https://stackoverflow.com/questions/31600497/django-drf-token-based-authentication-vs-json-web-token/>  
-<https://auth0.com/learn/token-based-authentication-made-easy/>  
-<https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/>  
-<https://simpleisbetterthancomplex.com/tutorial/2018/12/19/how-to-use-jwt-authentication-with-django-rest-framework.html/>  
+- <https://stackoverflow.com/questions/6068113/do-sessions-really-violate-restfulness?rq=1/>  
+- <https://dev.to/thecodearcher/what-really-is-the-difference-between-session-and-token-based-authentication-2o39/>  
+- <https://security.stackexchange.com/questions/81756/session-authentication-vs-token-authentication/>  
+- <https://simpleisbetterthancomplex.com/tutorial/2018/11/22/how-to-implement-token-authentication-using-django-rest-framework.html/>  
+- <https://stackoverflow.com/questions/31600497/django-drf-token-based-authentication-vs-json-web-token/>  
+- <https://auth0.com/learn/token-based-authentication-made-easy/>  
+- <https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/>  
+- <https://simpleisbetterthancomplex.com/tutorial/2018/12/19/how-to-use-jwt-authentication-with-django-rest-framework.html/>  
