@@ -138,6 +138,7 @@ body {
 .home #headshot {
   display: inline;
   max-width: 50%;
+  border-radius: 50%;
 }
 
 /* -----------------------------------------------------------
@@ -170,9 +171,9 @@ body {
     // Avatar Full-Size
     #headshot {
       display: block;
-      margin: auto;
-      padding-bottom: 1em;
+      margin: 1em auto;
       max-width: 100%;
+      border-radius: 50%;
     }
   }
 
