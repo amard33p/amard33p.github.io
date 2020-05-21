@@ -1,5 +1,5 @@
 ---
-title: "Modifying Python Source Code at Runtime"
+title: "Modifying Source Code using AST"
 layout: post
 excerpt: " "
 tags:
@@ -8,14 +8,12 @@ tags:
 
 ## Objective
 
-A simple function whose source code needs to be modified.
+We will modify the following function to return `num * num` instead of `2 * num` at runtime.
 
 ```
 def func(num):
     return 2 * num
 ```
-We will return `num * num` instead of `2 * num` at runtime.
-
 We will be working with the AST representation of the function. So let's first get the AST of the return value we want.
 
 ```
@@ -28,7 +26,7 @@ print(ast.dump(ast.parse(source_code)))
 Module(body=[Return(value=BinOp(left=Name(id='num', ctx=Load()), op=Mult(), right=Name(id='num', ctx=Load())))], type_ignores=[])
 ```
 
-We need the **value** field from the above output. Note that we need to add ast before each method names.
+We need the **value** field from the above output. Note that we need to add `ast` before each method names.
 
 ```
 value = ast.BinOp(
@@ -86,7 +84,7 @@ print(func(3))
 9
 ```
 
-Evidently, `transform` is a decorator *without a wrapper function*. So you can directly modify `func` with `@transform`.
+Clearly all that we have achieved here is a decorator *without a wrapper function*. A valid use case for these gymnastics is left as a job for the reader!
 
 
 _References:_  
