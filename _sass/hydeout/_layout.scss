@@ -162,7 +162,7 @@ body {
   /* Undo mobile CSS */
 
   #sidebar, .home #sidebar {
-    text-align: left;
+    text-align: center;
     width: $sidebar-width;
 
     > *:last-child {
@@ -294,6 +294,7 @@ body {
 
 #sidebar nav {
   display: flex;
+  margin-top: 2rem;
 }
 
 #sidebar-nav-links {

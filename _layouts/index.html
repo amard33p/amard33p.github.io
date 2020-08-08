@@ -16,7 +16,7 @@ layout: default
     </h2>
     {% include post-meta.html post=post %}
 
-    {% if post.excerpt %}
+    <!-- {% if post.excerpt %}
       {{ post.excerpt }}
     {% else %}
       {{ post.content }}
@@ -34,7 +34,7 @@ layout: default
       {% if content_words != excerpt_words %}
         <a href="{{ post.url | relative_url }}">More &hellip;</a>
       {% endif %}
-    {% endif %}
+    {% endif %} -->
   </article>
   {% endfor %}
 

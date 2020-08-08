@@ -1,9 +1,10 @@
 ---
-title: "Celery: Seed to Sprout"
+title: "Python Celery: Seed to Sprout"
 layout: post
 excerpt: "Understanding Python Celery from scratch to build a Django REST Framework API. "
 tags:
   - celery
+  - python
   - django-rest-framework
 ---
 We will learn to create a Celery task queue consisting of a chain of long-running tasks from scratch. Finally, we will build an API using Django REST Framework which accepts task inputs and then runs the task queue.
